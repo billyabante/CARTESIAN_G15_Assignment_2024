@@ -6,4 +6,6 @@ Group Members:
 
 Bool, Carlyn Grace M. (Project Leader)
 
-Del Castillo, Cherry ( Project Supervisor)
+Del Castillo, Cherry (Project Supervisor)
+
+Ponsica, Sydney Ruoj (Project QA)
