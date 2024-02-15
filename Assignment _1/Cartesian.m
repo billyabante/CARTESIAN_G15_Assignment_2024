@@ -1,16 +1,13 @@
-disp('CARTESIAN')
+disp('CARTESIAN CEILING')
 
 syms a1 a2 a3 a4 d1 d2 d3
 
 %% Link lengths
-
 a1 = 2;
 a2 = 3;
 a3 = 3;
 a4 = 1;
-
 %% Joint Variables
-
 d1 = 3;
 d2 = 3;
 d3 = 5;
