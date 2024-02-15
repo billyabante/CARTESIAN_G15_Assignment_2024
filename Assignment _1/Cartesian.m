@@ -12,6 +12,8 @@ d1 = 3;
 d2 = 3;
 d3 = 5;
 %% D-H Parameters [theta, d, r, alpha, offset]
+% if prismatic joint: theta, d = 0, offset = 1, after offset put the value of d
+% if revolute joint: theta = 0, after offset put the value of theta
 
 H1 = Link([0,0,0,pi/2,1,-a1]);
 H1.qlim = [0 0];
@@ -26,5 +28,5 @@ H4 = Link([0,0,0,0,1,a4]);
 H4.qlim = [0 d3];
 
 CARTESIAN = SerialLink([H1 H2 H3 H4], 'name', 'CARTESIAN CEILING');
-CARTESIAN.plot([0 0 0 0], 'workspace', [-2 10 -10 0 -10 1 -10 3])
+CARTESIAN.plot([0 0 0 0], 'workspace', [-2 10 -8 0 -10 1 -10 3])
 CARTESIAN.teach
