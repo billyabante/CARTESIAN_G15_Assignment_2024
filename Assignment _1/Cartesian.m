@@ -19,7 +19,7 @@ H1.qlim = [0 0];
 H2 = Link([pi/2,0,0,pi/2,1,a2]);
 H2.qlim = [0 d1]
 
-H3 = Link([pi/2,0,0,3*pi/2,1,a3]);
+H3 = Link([3*pi/2,0,0,pi/2,1,a3]);
 H3.qlim = [0 d2];
 
 H4 = Link([0,0,0,0,1,a4]);
