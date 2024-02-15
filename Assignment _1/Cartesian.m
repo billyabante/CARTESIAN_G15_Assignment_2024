@@ -29,5 +29,5 @@ H4 = Link([0,0,0,0,1,a4]);
 H4.qlim = [0 d3];
 
 CARTESIAN = SerialLink([H1 H2 H3 H4], 'name', 'CARTESIAN');
-CARTESIAN.plot([0 0 0 0], 'workspace', [-5 10 -10 0 -10 1 -10 3])
+CARTESIAN.plot([0 0 0 0], 'workspace', [-2 10 -10 0 -10 1 -10 3])
 CARTESIAN.teach
