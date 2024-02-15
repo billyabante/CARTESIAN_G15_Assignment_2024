@@ -4,4 +4,6 @@ This is for the Assignment of Group 11 for Robotics 2.
 
 Group Members:
 
-Bool, Carlyn Grace M. (Project Leader
+Bool, Carlyn Grace M. (Project Leader)
+
+Del Castillo, Cherry ( Project Supervisor)
