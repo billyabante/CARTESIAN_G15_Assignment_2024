@@ -11,6 +11,8 @@ a4 = 5;
 a5 = 5;
 
 %% D-H Parameters [theta, d, r, alpha, offset]
+% if prismatic joint: theta, d = 0, offset = 1, after offset put the value of d
+% if revolute joint: theta = 0, after offset put the value of theta
 
 H1 = Link([0,a1,a3,0,1,a2]);
 H1.qlim = [0 5];
@@ -21,9 +23,6 @@ H2.qlim = [-pi/2 pi/2];
 H3 = Link([0,0,a5,0,0]);
 H3.qlim = [-pi/2 pi/2];
 
-SCARA_2 = SerialLink([H1 H2 H3], 'name', 'SCARA_V2');
-
-SCARA_2.plot([0 0 0], 'workspace', [-5 25 -20 20 0 20 -20 20])
-
+SCARA_2 = SerialLink([H1 H2 H3], 'name', 'SCARA');
+SCARA_2.plot([0 0 0], 'workspace', [-5 25 -20 20 -20 20 -20 20])
 SCARA_2.teach
-
