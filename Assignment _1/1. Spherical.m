@@ -19,11 +19,10 @@ H1_2.qlim = pi/180*[-90 90];
 H2_3 = Link([0,0,0,0,1,a3]);
 H2_3.qlim = [0 5];
 
-Spherical_1 = SerialLink([H0_1 H1_2 H2_3], 'name', 'Spherical_1')
-Spherical_1.plot([0 0 0], 'workspace', [-8 15 -15 15 0 20])
+Spherical_1 = SerialLink([H0_1 H1_2 H2_3], 'name', 'Spherical')
+Spherical_1.plot([0 0 0], 'workspace', [-8 15 -15 15 -5 20])
 Spherical_1.teach
 
 %% Forward Kinemtics
 %syntax: FK = robot_variable.fkine(joint_variables)
-
 Af = ([5,pi/2,pi/2]); %joint_variables FK = Spherical_Manipulator_Modern_Variant.fkine(Af)
