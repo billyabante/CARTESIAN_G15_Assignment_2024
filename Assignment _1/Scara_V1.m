@@ -29,8 +29,6 @@ H3.qlim = [-pi/2 pi/2];
 H4 = Link([0,0,a4,0,0]);
 H4.qlim = [-pi/2 pi/2];
 
-SCARA_1 = SerialLink([H1 H2 H3 H4], 'name', 'SCARA_V1');
-
-SCARA_1.plot([0 0 0 0], 'workspace', [-5 20 -10 10 0 20 -20 20])
-
+SCARA_1 = SerialLink([H1 H2 H3 H4], 'name', 'SPRR');
+SCARA_1.plot([0 0 0 0], 'workspace', [-5 20 -10 10 -5 20 -20 20])
 SCARA_1.teach
